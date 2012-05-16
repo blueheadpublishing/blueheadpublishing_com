@@ -1,0 +1,2 @@
+module Products::BookskillsHelper
+end

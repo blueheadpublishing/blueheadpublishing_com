@@ -1,0 +1,38 @@
+<div class="row">
+  <ul class="breadcrumb">
+    <li>
+      <%= link_to "Home", :controller => "/home" %>
+      <span class="divider">/</span>
+    </li>
+    <li>
+      <%= link_to "Products", :controller => "/products" %>
+      <span class="divider">/</span>
+    </li>
+    <li class="active">Bookcloud</li>
+  </ul>
+</div>
+<div class="row">
+  <div class="span3">
+    <ul class="nav nav-list" id="subnav">
+      <li class="nav-header">
+        Products
+      </li>
+      <li>
+        <a href="/products/bookshop"><i class="icon-book"></i>Bookshop</a>
+      </li>
+      <li>
+        <a href="/products/bookcloud"><i class="icon-arrow-up"></i>Bookcloud</a>
+      </li>
+      <li>
+        <a href="/products/bookskills"><i class="icon-user"></i>Bookskills</a>
+      </li>
+    </ul>
+  </div>
+  <div class="span9" id="content">
+    <h2><span class="orange">Agile</span> Releasing</h2>
+    <p style="text-align:center;"><%= image_tag "cloud_splash.png", :title => "Bookcloud", :class => "class" %></p>
+    <p>Bookcloud is a revolutionary way to deploy and distribute your book. You can use it directly from Bookshop to deploy your book in all its formats, with one command. Or you can upload your individual formats. They are then available for downloading, sharing, selling and even via an API so that other software applications can create imaginative ways of distribution.</p>
+    <p>We are currently using this product internally and are planning our roll-out later this Fall. Stay tuned!</p>
+  </div>
+</div>
+

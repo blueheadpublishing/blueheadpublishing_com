@@ -1,0 +1,89 @@
+@import "twitter/bootstrap/bootstrap";
+body { padding-top: 70px; }
+
+@import "twitter/bootstrap/responsive";
+
+// Set the correct sprite paths
+@iconSpritePath: asset-path('twitter/bootstrap/glyphicons-halflings.png');
+@iconWhiteSpritePath: asset-path('twitter/bootstrap/glyphicons-halflings-white.png');
+
+// Set the Font Awesome (Font Awesome is default. You can disable by commenting below lines)
+@fontAwesomeEotPath: asset-path('fontawesome-webfont.eot');
+@fontAwesomeWoffPath: asset-path('fontawesome-webfont.woff');
+@fontAwesomeTtfPath: asset-path('fontawesome-webfont.ttf');
+@fontAwesomeSvgzPath: asset-path('fontawesome-webfont.svgz');
+@fontAwesomeSvgPath: asset-path('fontawesome-webfont.svg');
+
+// Font Awesome
+@import "fontawesome";
+
+// Your custom LESS stylesheets goes here
+//
+// Since bootstrap was imported above you have access to its mixins which
+// you may use and inherit here
+//
+// If you'd like to override bootstrap's own variables, you can do so here as well
+// See http://twitter.github.com/bootstrap/less.html for their names and documentation
+//
+// Example:
+// @linkColor: #ff0000;
+
+.brand {
+	margin: -5px 0 -10px 0;
+}
+
+@navbarBackground: #fff;
+@navbarBackgroundHighlight: #fff;
+@navbarText: @linkColor;
+@navbarLinkColor: @linkColor;
+@navbarLinkColorHover: #fff;
+@navbarLinkColorActive: #999;
+@navbarSearchBorder: #fff;
+@navbarLinkBackgroundHover: @linkColor;
+
+.nav li {
+	margin-top: 5px;
+}
+@shadow: #000;
+@radius: 4px;
+
+@heroUnitBackground: #fff;
+
+#myCarousel {
+	width: 100%;
+	margin: 30px 0 30px 0;
+}
+#home_logo {
+	text-align: center;
+	padding: 100px 0 0 15px;
+	height: 200px;
+	border-right: 1px solid #999;
+}
+.hero {
+	padding-left: 12%;
+}
+#footer {
+	position: fixed;
+	color: #999;
+	font-size: .8em;
+	bottom:0px;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background-color: #fff;
+}
+.orange {
+	color: #f94d13;
+}
+#subnav {
+	background-color: #eee;
+	.border-radius(6px);
+}
+#content {
+	padding: 20px 0 0 0px;
+}
+.breadcrumb {
+	border: none;
+	background: none;
+	padding-top: 0;
+}

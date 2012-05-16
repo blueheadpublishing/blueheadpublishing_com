@@ -1,0 +1,73 @@
+<div class="row">
+  <ul class="breadcrumb">
+    <li>
+      <%= link_to "Home", :controller => "/home" %>
+      <span class="divider">/</span>
+    </li>
+    <li>
+      <%= link_to "Products", :controller => "/products" %>
+      <span class="divider">/</span>
+    </li>
+    <li class="active">Bookshop</li>
+  </ul>
+</div>
+<div class="row">
+  <div class="span3">
+    <ul class="nav nav-list" id="subnav">
+      <li class="nav-header">
+        Products
+      </li>
+      <li>
+        <a href="/products/bookshop"><i class="icon-book"></i>Bookshop</a>
+      </li>
+      <li>
+        <a href="/products/bookcloud"><i class="icon-arrow-up"></i>Bookcloud</a>
+      </li>
+      <li>
+        <a href="/products/bookskills"><i class="icon-user"></i>Bookskills</a>
+      </li>
+    </ul>
+    
+    <p>&nbsp;</p>
+    <ul class="nav nav-list" style="text-align:right;">
+      <li class="nav-header">
+        More Bookshop Links
+      </li>
+      <li>
+        <a href="https://rubygems.org/gems/bookshop/" target="_blank">
+          Rubygems Page</a>
+      </li>
+      <li>
+        <a href="http://github.com/blueheadpublishing/bookshop/" target="_blank">
+          Source Code</a>
+      </li>
+      <li>
+        <a href="http://groups.google.com/group/bookshop_devs" target="_blank">
+          Mailing List</a>
+      </li>
+    </ul>
+    
+    
+  </div>
+  <div class="span9" id="content">
+    <h2><span class="orange">Agile</span> Book Development</h2>
+    <p style="text-align:center;"><%= image_tag "bookshop_hero.jpg", :title => "Bookshop", :class => "class" %></p>
+    <p>Bookshop is an open source agile book publishing framework for publishers, editors, and coders in today's publishing industry. bookshop provides a framework for developing books using well-known web languages like HTML/CSS, which are then converted into pdf and other (e)book formats. The framework is optimized to help developers quickly ramp-up, allowing them to jump in and develop their html-to-pdf/(e)book flows, by favoring convention over configuration, setting them up with best-practices, standards and tools from the start.<p>
+    <p>Bookshop is packaged for installation as a Rubygem. So installation is as easy as "gem install bookshop".</p>
+    <p>For detailed installation instructions, <a href="https://github.com/blueheadpublishing/bookshop/wiki/Setting-Up-Your-bookshop-Environment">click here</a>.
+		<p>If you already have Ruby installed on your system, you can simply install Bookshop with the following steps:</p>
+    <p><code>$ gem install bookshop</code> <em>(installs bookshop)</em></p>
+		<p><code>$ bookshop new my_new_book</code> <em>(creates a new book)</em></p>
+		<p>Download and install PrinceXML: <a href="http://www.princexml.com/download/" target="_blank">http://www.princexml.com/download/</a>
+		<p><code>$ bookshop build pdf</code> <em>(builds a pdf version of your book)</em></p>
+		<p>&nbsp;</p>
+		<p>Here's an example book 
+		  (<a href="http://blueheadpublishing.github.com/bookshop/the_book/" target="_blank">HTML</a>)
+		  (<a href="http://blueheadpublishing.github.com/bookshop/the_book/book.pdf" target="_blank">PDF</a>) 
+		  (<a href="http://blueheadpublishing.github.com/bookshop/the_book/book.epub" target="_blank">EPUB/iBook/iPad</a>) 
+		  (<a href="http://blueheadpublishing.github.com/bookshop/the_book/book.mobi" target="_blank">MOBI/Kindle</a>) 
+		  (<a href="https://github.com/blueheadpublishing/bookshop/tree/master/lib/bookshop/generators/bookshop/app/templates" target="_blank">Source</a>)
+		</p>
+  </div>
+</div>
+

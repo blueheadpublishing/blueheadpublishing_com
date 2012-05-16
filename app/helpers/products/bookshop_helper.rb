@@ -1,0 +1,2 @@
+module Products::BookshopHelper
+end

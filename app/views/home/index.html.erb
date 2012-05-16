@@ -1,0 +1,37 @@
+<div class="row">
+  <div class="span3" id="home_logo">
+    <%= image_tag "bluehead.gif", :title => "BlueHead Logo" %>
+  </div>
+  <div class="span8">
+    <div id="myCarousel" class="carousel slide hidden-phone">
+      <div class="carousel-inner">
+        <div class="item active">
+          <%= link_to image_tag("bookshop_hero.jpg", :title => "Bookshop Promo", :class => "hero"), :controller => "products", :action => "bookshop" %>
+        </div>
+        <div class="item">
+          <%= link_to image_tag("all_rights.png", :title => "Services Promo", :class => "hero"), :controller => "/services" %>
+        </div>
+      </div>
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
+    </div>
+  </div>
+</div>
+<!-- Example row of columns -->
+<div class="row">
+  <div class="span4">
+    <h2><span class="orange">Agile</span> Products</h2>
+     <p>With <%= link_to "Bookshop", :controller => "/products", :action => "bookshop" %> and our other agile products, you can dramatically cut your publishing overheads like time to market, revision editing, multiple book formatting.</p>
+    <p><%= link_to raw("More info &raquo;"), {:controller => "/products"}, {:class => "btn"} %></p>
+  </div>
+  <div class="span4">
+    <h2><span class="orange">Agile</span> Services</h2>
+     <p>Let us manage your manuscript-to-market conversion, listing, distribution and royalties management. You can focus on driving your sales, publicity and engagements.</p>
+     <p><%= link_to raw("More info &raquo;"), {:controller => "/services"}, {:class => "btn"} %></p>
+ </div>
+  <div class="span4">
+    <h2><span class="orange">Agile</span> Connections</h2>
+    <p>We are building a database of people and organizations that can serve you, including publicists, artists, editors, photographers, booking agents, press consultants, etc.</p>
+    <p><%= link_to raw("More info &raquo;"), {:controller => "/products/bookskills"}, {:class => "btn"} %></p>
+  </div>
+</div>

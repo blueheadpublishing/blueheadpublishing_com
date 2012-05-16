@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>BlueHead Publishing :: tools for tomorrow</title>
+  <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js" type="test/javascript"></script>
+  <![endif]-->
+  <link rel="icon" type="image/png" href="/favicon.png" />
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.png" />
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+  <div class="navbar-inner">
+    <div class="container">
+      <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </a>
+      <a class="brand" href="/">
+        <%= image_tag "bh_sugar.gif", :title => "BlueHead Logo", :class => "brand" %>
+      </a>
+      <div class="nav-collapse">
+        <ul class="nav nav-pills">
+          <li><%= link_to "Products", :controller => "/products" %></li>
+          <li><%= link_to "Services", :controller => "/services" %></li>
+          <li><%= link_to "About Us", :controller => "/about_us" %></li>
+          <li><%= link_to "Contact Us", :controller => "/contact_us" %></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <%= yield %>
+</div>
+<div class="container">
+  <div class="row" id="footer">
+    <div class="span12">
+      <p>&copy; Copyright 2012 BlueHead Publishing. All Rights Reserved.</p>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

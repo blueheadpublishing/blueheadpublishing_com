@@ -1,0 +1,35 @@
+<div class="row">
+  <ul class="breadcrumb">
+    <li>
+      <%= link_to "Home", :controller => "/home" %>
+      <span class="divider">/</span>
+    </li>
+    <li class="active">Products</li>
+  </ul>
+</div>
+<div class="row">
+  <div class="span3">
+    <ul class="nav nav-list" id="subnav">
+      <li class="nav-header">
+        Products
+      </li>
+      <li>
+        <a href="/products/bookshop"><i class="icon-book"></i>Bookshop</a>
+      </li>
+      <li>
+        <a href="/products/bookcloud"><i class="icon-arrow-up"></i>Bookcloud</a>
+      </li>
+      <li>
+        <a href="/products/bookskills"><i class="icon-user"></i>Bookskills</a>
+      </li>
+    </ul>
+  </div>
+  <div class="span9" id="content">
+    <h2><span class="orange">Agile</span> Products</h2>
+    <p style="text-align:center;"><%= image_tag "Products-Splash.png", :title => "Products", :class => "class" %></p>
+    <p>At BlueHead, rather than thinking like a print shop, we began by thinking like a tech shop. Rather than release cycles that are a year or two apart, we wanted to focus on an Agile approach. From this came our first open source software solution, Bookshop. We use Bookshop internally to manage all of our manuscript conversion to print-pdf, online-pdf, kindle, ibooks, etc.</p>
+    <p>We are planning the release of some upcoming web-based services which we are currently using internally to manage our own publishing flow. After all, if we aren't using it ourselves, why would anyone else want to use it?</p>
+    <p>Take a look at our products and give us a holler. Let us know what you think!</p>
+  </div>
+</div>
+
