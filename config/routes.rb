@@ -2,6 +2,7 @@ BlueheadpublishingCom::Application.routes.draw do
   
   match 'products' => 'products/bookshop#index'
   match 'products/bookshop' => 'products/bookshop#index'
+  match 'products/bookshop/documentation' => 'products/bookshop/documentation#index'
   
   resources :books
   resources :products
